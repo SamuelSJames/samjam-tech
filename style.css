@@ -119,6 +119,13 @@ p {
   margin-top: 22px;
 }
 
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+}
+
 .hero-tags span,
 .chips span {
   border: 1px solid rgba(113, 167, 255, 0.18);
@@ -219,6 +226,29 @@ a {
 
 a:hover {
   color: var(--text);
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(113, 167, 255, 0.24);
+  background: rgba(255, 255, 255, 0.02);
+  color: var(--text);
+  font-weight: 600;
+}
+
+.button.primary {
+  background: linear-gradient(135deg, #4f7cff, #3b82f6);
+  border-color: rgba(113, 167, 255, 0.45);
+  color: white;
+}
+
+.button:hover {
+  transform: translateY(-1px);
 }
 
 @media (max-width: 980px) {
