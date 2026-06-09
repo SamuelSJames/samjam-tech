@@ -14,8 +14,8 @@
   <div class="page">
 
     <!-- ROW 1: Hero + Connect/Networking -->
-    <section class="hero-section">
-      <div class="hero-left">
+    <section class="row-1">
+      <div class="hero-left card">
         <div class="hero-photo-wrap">
           <img src="assets/profile.jpg" alt="Samuel James" class="hero-photo">
         </div>
@@ -35,17 +35,34 @@
         <div class="connect-panel card">
           <h2 class="section-title cyan">CONNECT</h2>
           <ul class="connect-list">
-            <li><span class="icon">✉</span> <a href="mailto:samueljamesinc@gmail.com">samueljamesinc@gmail.com</a></li>
-            <li><span class="icon">📍</span> South Bend, IN</li>
-            <li><span class="icon">📞</span> 16016132249</li>
-            <li><span class="icon">🔗</span> <a href="https://github.com/SamuelSJames" target="_blank" rel="noreferrer">github.com/SamuelSJames</a></li>
-            <li><span class="icon">💼</span> <a href="https://www.linkedin.com/in/samueljamesinc/" target="_blank" rel="noreferrer">linkedin.com/in/samueljamesinc</a></li>
-            <li><span class="icon">🌐</span> <a href="https://samuelsjames.github.io/samjam-tech/" target="_blank" rel="noreferrer">samuelsjames.github.io/samjam-tech</a></li>
+            <li><svg class="ci" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg><a href="mailto:samueljamesinc@gmail.com">samueljamesinc@gmail.com</a></li>
+            <li><svg class="ci" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>South Bend, IN</li>
+            <li><svg class="ci" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>16016132249</li>
+            <li><svg class="ci" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475z"/></svg><a href="https://github.com/SamuelSJames" target="_blank">github.com/SamuelSJames <span class="arrow">↗</span></a></li>
+            <li><svg class="ci" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 8a6 6 0 01.75 11.95V16h-2v3.95A6 6 0 0116 8zm-4-2a2 2 0 110 4 2 2 0 010-4z" fill="var(--bg)"/></svg><a href="https://www.linkedin.com/in/samueljamesinc/" target="_blank">linkedin.com/in/samueljamesinc <span class="arrow">↗</span></a></li>
+            <li><svg class="ci" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10A15.3 15.3 0 0112 2z" fill="none" stroke="var(--bg)" stroke-width="1.5"/></svg><a href="https://samuelsjames.github.io/samjam-tech/" target="_blank">samuelsjames.github.io/samjam-tech <span class="arrow">↗</span></a></li>
           </ul>
         </div>
         <div class="networking-panel card">
           <h2 class="section-title">NETWORKING FOCUS</h2>
-          <img src="assets/Network_focus.png" alt="Networking Focus Diagram" class="panel-img">
+          <div class="net-grid">
+            <div class="net-item">
+              <svg class="net-icon" viewBox="0 0 24 24"><path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.18l6 3v5.64l-6 3-6-3V7.18l6-3z"/><circle cx="12" cy="12" r="2"/></svg>
+              <span>Routing &<br>Switching</span>
+            </div>
+            <div class="net-item">
+              <svg class="net-icon" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
+              <span>Firewalls &<br>Security</span>
+            </div>
+            <div class="net-item">
+              <svg class="net-icon" viewBox="0 0 24 24"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/><circle cx="7" cy="7" r="1.5"/><circle cx="7" cy="12" r="1.5"/><circle cx="7" cy="17" r="1.5"/></svg>
+              <span>VLANs &<br>Segmentation</span>
+            </div>
+            <div class="net-item">
+              <svg class="net-icon" viewBox="0 0 24 24"><path d="M4 20h16v-2H4v2zm0-6h16v-2H4v2zm0-8v2h16V6H4z"/><path d="M2 4v16h20V4H2zm18 14H4V6h16v12z" fill="none"/></svg>
+              <span>Fiber & Copper<br>Infrastructure</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -53,23 +70,23 @@
     <!-- ROW 2: Stats Bar -->
     <section class="stats-bar card">
       <div class="stat">
-        <span class="stat-icon">💼</span>
+        <svg class="stat-icon" viewBox="0 0 24 24"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-2 .89-2 2v11c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
         <div><strong>10+</strong><small>YEARS EXPERIENCE</small></div>
       </div>
       <div class="stat">
-        <span class="stat-icon">👥</span>
+        <svg class="stat-icon" viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
         <div><strong>8-14</strong><small>TEAM SIZE LED</small></div>
       </div>
       <div class="stat">
-        <span class="stat-icon">🖥</span>
+        <svg class="stat-icon" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h6v2H8v2h8v-2h-2v-2h6c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H4V4h16v12z"/></svg>
         <div><strong>1000+</strong><small>SERVERS DEPLOYED</small></div>
       </div>
       <div class="stat">
-        <span class="stat-icon">⚡</span>
-        <div><strong>24/7</strong><small>MISSION-CRITICAL OPERATIONS</small></div>
+        <svg class="stat-icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+        <div><strong>24/7</strong><small>MISSION-CRITICAL OPS</small></div>
       </div>
       <div class="stat">
-        <span class="stat-icon"><img src="assets/aws-logo.svg" alt="AWS" class="stat-logo"></span>
+        <img src="assets/aws-logo.svg" alt="AWS" class="stat-logo">
         <div><strong>AWS</strong><small>CLOUD ENVIRONMENTS</small></div>
       </div>
     </section>
@@ -79,41 +96,41 @@
       <h2 class="section-title cyan">CORE EXPERTISE</h2>
       <div class="expertise-grid">
         <div class="expertise-item">
-          <div class="expertise-icon">🏢</div>
+          <div class="exp-icon-wrap"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM7 10h2v7H7zm4-3h2v10h-2zm4 6h2v4h-2z"/></svg></div>
           <span>Data Center<br>Operations</span>
         </div>
         <div class="expertise-item">
-          <div class="expertise-icon">🌐</div>
+          <div class="exp-icon-wrap"><svg viewBox="0 0 24 24"><path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.18l6 3v5.64l-6 3-6-3V7.18l6-3z"/><circle cx="12" cy="12" r="2"/></svg></div>
           <span>Network<br>Engineering</span>
         </div>
         <div class="expertise-item">
-          <div class="expertise-icon"><img src="assets/cisco-blue-logo.svg" alt="Cisco" class="expertise-logo"></div>
+          <div class="exp-icon-wrap"><img src="assets/cisco-blue-logo.svg" alt="Cisco"></div>
           <span>Cisco<br>Technologies</span>
         </div>
         <div class="expertise-item">
-          <div class="expertise-icon"><img src="assets/aws-logo.svg" alt="AWS" class="expertise-logo"></div>
+          <div class="exp-icon-wrap"><img src="assets/aws-logo.svg" alt="AWS"></div>
           <span>AWS<br>Infrastructure</span>
         </div>
         <div class="expertise-item">
-          <div class="expertise-icon"><img src="assets/linux-logo.svg" alt="Linux" class="expertise-logo"></div>
+          <div class="exp-icon-wrap"><img src="assets/linux-logo.svg" alt="Linux"></div>
           <span>Linux<br>Administration</span>
         </div>
         <div class="expertise-item">
-          <div class="expertise-icon">⚙️</div>
+          <div class="exp-icon-wrap"><svg viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58a.49.49 0 00.12-.61l-1.92-3.32a.488.488 0 00-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 00-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.07.62-.07.94s.02.64.07.94l-2.03 1.58a.49.49 0 00-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg></div>
           <span>Automation<br>& Scripting</span>
         </div>
         <div class="expertise-item">
-          <div class="expertise-icon">🔌</div>
+          <div class="exp-icon-wrap"><svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h6l-2 3v1h8v-1l-2-3h6c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H4V4h16v12z"/><path d="M6 8h12v1H6zm0 3h8v1H6z"/></svg></div>
           <span>Fiber & Copper<br>Cabling</span>
         </div>
         <div class="expertise-item">
-          <div class="expertise-icon">📊</div>
+          <div class="exp-icon-wrap"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg></div>
           <span>Monitoring<br>& Observability</span>
         </div>
       </div>
     </section>
 
-    <!-- ROW 4: Summary + Projects + Certs + Current Focus -->
+    <!-- ROW 4: Summary + Projects | Certs + Current Focus -->
     <section class="mid-grid">
       <div class="summary-panel card">
         <h2 class="section-title cyan">👤 PROFESSIONAL SUMMARY</h2>
@@ -131,23 +148,23 @@
       <div class="projects-panel card">
         <h2 class="section-title cyan">&lt;/&gt; FEATURED PROJECTS</h2>
         <div class="project-item">
-          <div class="project-icon">📊</div>
+          <div class="project-icon orange">📊</div>
           <div>
-            <h3><a href="#">AWS Operations Dashboard</a></h3>
+            <h3>AWS Operations Dashboard <span class="arrow">↗</span></h3>
             <p>Excel/VBA automation platform for deployment tracking, KPIs, resource allocation, and reporting across data center and cloud environments.</p>
           </div>
         </div>
         <div class="project-item">
-          <div class="project-icon">🖥</div>
+          <div class="project-icon green">🖥</div>
           <div>
-            <h3><a href="#">Home Lab Infrastructure</a></h3>
+            <h3>Home Lab Infrastructure <span class="arrow">↗</span></h3>
             <p>Proxmox cluster with Linux servers, networking labs, VPN, automation, and self-hosted services for testing and continuous learning.</p>
           </div>
         </div>
         <div class="project-item">
-          <div class="project-icon">💚</div>
+          <div class="project-icon teal">💚</div>
           <div>
-            <h3><a href="#">Wellness Tracker</a></h3>
+            <h3>Wellness Tracker <span class="arrow">↗</span></h3>
             <p>Full-stack fitness tracking application focused on habit formation, KPI tracking, and community accountability.</p>
           </div>
         </div>
@@ -155,29 +172,46 @@
 
       <div class="certs-panel card">
         <h2 class="section-title cyan">CERTIFICATIONS</h2>
-        <ul class="cert-list">
-          <li><span class="check">✓</span> Cisco CCNET</li>
-          <li><span class="check">✓</span> Cisco Certified Specialist (CCS)</li>
-          <li><span class="check">✓</span> AWS Certified Cloud Practitioner</li>
-          <li><span class="check">✓</span> Linux Engineering Certificate (Careerist)</li>
-        </ul>
-        <h3 class="in-progress-title">IN PROGRESS</h3>
-        <ul class="cert-list progress">
-          <li><span class="check pending">☐</span> Linux+</li>
-          <li><span class="check pending">☐</span> AWS Machine Learning Engineer</li>
-        </ul>
+        <div class="certs-grid">
+          <div class="certs-earned">
+            <ul class="cert-list">
+              <li><span class="check">✓</span> Cisco CCNET</li>
+              <li><span class="check">✓</span> Cisco Certified Specialist (CCS)</li>
+              <li><span class="check">✓</span> AWS Certified Cloud Practitioner</li>
+              <li><span class="check">✓</span> Linux Engineering Certificate (Careerist)</li>
+            </ul>
+          </div>
+          <div class="certs-progress">
+            <h3 class="in-progress-title">IN PROGRESS</h3>
+            <ul class="cert-list">
+              <li><span class="check pending">☐</span> Linux+</li>
+              <li><span class="check pending">☐</span> AWS Machine Learning Engineer</li>
+            </ul>
+          </div>
+        </div>
       </div>
 
       <div class="focus-panel card">
         <h2 class="section-title cyan">CURRENT FOCUS</h2>
-        <ul class="focus-list">
-          <li>AWS Infrastructure Operations</li>
-          <li>WGU Cloud Computing Degree</li>
-          <li>Linux Administration & Automation</li>
-          <li>Network Engineering & Security</li>
-          <li>Infrastructure Leadership & Architecture</li>
-        </ul>
-        <img src="assets/current-focus.png" alt="Current Focus" class="focus-img">
+        <div class="focus-content">
+          <ul class="focus-list">
+            <li>AWS Infrastructure Operations</li>
+            <li>WGU Cloud Computing Degree</li>
+            <li>Linux Administration & Automation</li>
+            <li>Network Engineering & Security</li>
+            <li>Infrastructure Leadership & Architecture</li>
+          </ul>
+          <div class="aws-arch">
+            <img src="assets/aws-logo.svg" alt="AWS" class="aws-cloud-icon">
+            <div class="aws-services">
+              <div class="aws-svc"><img src="assets/Virtual Private Cloud.svg" alt="VPC"><span>VPC</span></div>
+              <div class="aws-svc"><img src="assets/CloudFormation.svg" alt="Subnets"><span>SUBNETS</span></div>
+              <div class="aws-svc"><img src="assets/EC2.svg" alt="Servers"><span>SERVERS</span></div>
+              <div class="aws-svc"><img src="assets/Simple Storage Service.svg" alt="S3"><span>S3</span></div>
+              <div class="aws-svc"><img src="assets/CloudWatch.svg" alt="Monitoring"><span>MONITORING</span></div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -188,29 +222,29 @@
         <div class="timeline-point">
           <div class="timeline-year">2014</div>
           <div class="timeline-dot"></div>
-          <div class="timeline-role"><strong>Help Desk Technician</strong></div>
-          <div class="timeline-desc">IT Support Foundation</div>
+          <div class="timeline-role"><strong>Help Desk<br>Technician</strong></div>
+          <div class="timeline-desc">IT Support<br>Foundation</div>
         </div>
         <div class="timeline-line"></div>
         <div class="timeline-point">
           <div class="timeline-year">2016</div>
           <div class="timeline-dot"></div>
-          <div class="timeline-role"><strong>Infrastructure Technician</strong></div>
-          <div class="timeline-desc">Systems & Network Management</div>
+          <div class="timeline-role"><strong>Infrastructure<br>Technician</strong></div>
+          <div class="timeline-desc">Systems & Network<br>Management</div>
         </div>
         <div class="timeline-line"></div>
         <div class="timeline-point">
           <div class="timeline-year">2019</div>
           <div class="timeline-dot"></div>
-          <div class="timeline-role"><strong>Lead Data Center Technician</strong></div>
-          <div class="timeline-desc">Team Leadership & Operations</div>
+          <div class="timeline-role"><strong>Lead Data Center<br>Technician</strong></div>
+          <div class="timeline-desc">Team Leadership<br>& Operations</div>
         </div>
         <div class="timeline-line"></div>
         <div class="timeline-point">
           <div class="timeline-year">2024+</div>
           <div class="timeline-dot active"></div>
-          <div class="timeline-role"><strong>Infrastructure Leader</strong></div>
-          <div class="timeline-desc">Cloud + Automation Leadership</div>
+          <div class="timeline-role"><strong>Infrastructure<br>Leader</strong></div>
+          <div class="timeline-desc">Cloud + Automation<br>Leadership</div>
         </div>
       </div>
     </section>
@@ -219,48 +253,24 @@
     <section class="tools-section card">
       <h2 class="section-title cyan">TOOLS & TECHNOLOGIES</h2>
       <div class="tools-grid">
-        <div class="tool-item">
-          <img src="assets/cisco-blue-logo.svg" alt="Cisco IOS">
-          <span>Cisco IOS</span>
-        </div>
-        <div class="tool-item">
-          <img src="assets/linux-logo.svg" alt="Linux">
-          <span>Linux</span>
-        </div>
-        <div class="tool-item">
-          <img src="assets/aws-logo.svg" alt="AWS">
-          <span>AWS</span>
-        </div>
-        <div class="tool-item">
-          <img src="assets/ansible-color-logo.svg" alt="Ansible">
-          <span>Ansible</span>
-        </div>
-        <div class="tool-item">
-          <img src="assets/bash-logo.svg" alt="Bash">
-          <span>Bash</span>
-        </div>
-        <div class="tool-item">
-          <img src="assets/python-logo.svg" alt="Python">
-          <span>Python</span>
-        </div>
-        <div class="tool-item">
-          <img src="assets/cloud-computing-svgrepo-com.svg" alt="Wireshark">
-          <span>Wireshark</span>
-        </div>
-        <div class="tool-item">
-          <img src="assets/github-logo.svg" alt="Git">
-          <span>Git</span>
-        </div>
+        <div class="tool-item"><img src="assets/cisco-blue-logo.svg" alt="Cisco IOS"><span>Cisco IOS</span></div>
+        <div class="tool-item"><img src="assets/linux-logo.svg" alt="Linux"><span>Linux</span></div>
+        <div class="tool-item"><img src="assets/aws-logo.svg" alt="AWS"><span>AWS</span></div>
+        <div class="tool-item"><img src="assets/ansible-color-logo.svg" alt="Ansible"><span>Ansible</span></div>
+        <div class="tool-item"><img src="assets/bash-logo.svg" alt="Bash"><span>Bash</span></div>
+        <div class="tool-item"><img src="assets/python-logo.svg" alt="Python"><span>Python</span></div>
+        <div class="tool-item"><img src="assets/cloud-computing-svgrepo-com.svg" alt="Wireshark"><span>Wireshark</span></div>
+        <div class="tool-item"><img src="assets/github-logo.svg" alt="Git"><span>Git</span></div>
       </div>
     </section>
 
     <!-- ROW 7: Values Footer -->
-    <footer class="values-bar">
-      <div class="value"><span>🎯</span> Mission-Critical Mindset</div>
-      <div class="value"><span>🔄</span> Continuous Improvement</div>
-      <div class="value"><span>⚡</span> Automation-Driven</div>
-      <div class="value"><span>🔒</span> Security-Focused</div>
-      <div class="value"><span>🏆</span> Results-Oriented Leadership</div>
+    <footer class="values-bar card">
+      <div class="value"><svg class="val-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="6" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="2"/></svg>Mission-Critical Mindset</div>
+      <div class="value"><svg class="val-icon" viewBox="0 0 24 24"><path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46C19.54 15.03 20 13.57 20 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74C4.46 8.97 4 10.43 4 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"/></svg>Continuous Improvement</div>
+      <div class="value"><svg class="val-icon" viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>Automation-Driven</div>
+      <div class="value"><svg class="val-icon" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>Security-Focused</div>
+      <div class="value"><svg class="val-icon" viewBox="0 0 24 24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94.63 1.5 1.98 2.63 3.61 2.96V19H7v2h10v-2h-4v-3.1c1.63-.33 2.98-1.46 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2z"/></svg>Results-Oriented Leadership</div>
     </footer>
 
     <!-- Download -->
