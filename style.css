@@ -137,7 +137,7 @@ h1 {
 /* ========== ROW 3: EXPERTISE ========== */
 .expertise-grid {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 14px;
   text-align: center;
 }
@@ -200,16 +200,30 @@ h1 {
 }
 
 /* Focus */
-.focus-content { display: flex; align-items: flex-start; gap: 40px; }
+.focus-content { display: flex; align-items: flex-start; gap: 32px; flex-wrap: wrap; }
+.focus-left { flex: 1; min-width: 200px; }
 .focus-list { list-style: disc; padding-left: 18px; font-size: .82rem; color: var(--text); }
 .focus-list li { margin-bottom: 6px; }
 
 .aws-arch { display: flex; flex-direction: column; align-items: center; gap: 12px; }
 .aws-cloud-icon { height: 48px; width: auto; }
-.aws-services { display: flex; gap: 16px; }
+.aws-services { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; }
 .aws-svc { display: flex; flex-direction: column; align-items: center; gap: 4px; }
 .aws-svc img { width: 32px; height: 32px; object-fit: contain; }
-.aws-svc span { font-size: .6rem; color: var(--muted); letter-spacing: .05em; text-transform: uppercase; }
+.aws-svc span { font-size: .58rem; color: var(--muted); letter-spacing: .04em; text-transform: uppercase; }
+
+.demo-projects { flex: 1; min-width: 200px; }
+.demo-projects .section-title { margin-bottom: 10px; font-size: .7rem; }
+.demo-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.demo-list li { display: flex; align-items: center; gap: 8px; font-size: .78rem; }
+.demo-list a { color: var(--cyan-dim); }
+.demo-list a:hover { color: #fff; }
+
+.demo-badge {
+  font-size: .6rem; padding: 2px 8px; border-radius: 6px;
+  background: rgba(0, 200, 255, 0.08); border: 1px solid rgba(0, 200, 255, 0.15);
+  color: var(--cyan); letter-spacing: .04em; white-space: nowrap;
+}
 
 /* ========== ROW 5: TIMELINE ========== */
 .timeline-section { text-align: center; padding: 20px 28px; }
