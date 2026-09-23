@@ -1,13 +1,16 @@
 :root {
-  --bg: #0a0e1a;
-  --card: rgba(12, 20, 40, 0.88);
-  --card-border: rgba(0, 200, 255, 0.1);
-  --cyan: #00d4ff;
-  --cyan-dim: rgba(0, 212, 255, 0.7);
+  /* Dark gray base + blue primary + orange accent */
+  --bg: #16181d;                          /* dark gray */
+  --card: rgba(30, 34, 42, 0.88);         /* slate gray panel */
+  --card-border: rgba(59, 130, 246, 0.18);/* blue-tinted edge */
+  --cyan: #4a90e2;                        /* PRIMARY = blue (kept var name so all uses recolor) */
+  --cyan-dim: rgba(74, 144, 226, 0.8);
   --blue: #3b82f6;
-  --text: #c8d6e5;
-  --text-bright: #e8f0ff;
-  --muted: #6b7fa0;
+  --orange: #f2792b;                      /* ACCENT = orange */
+  --orange-dim: rgba(242, 121, 43, 0.85);
+  --text: #c2cad6;                        /* light gray text */
+  --text-bright: #eef2f8;
+  --muted: #8a94a6;                       /* mid gray */
   --radius: 16px;
 }
 
@@ -74,8 +77,8 @@ a:hover { color: #fff; }
   object-fit: cover;
   object-position: center top;
   border-radius: 12px;
-  border: 2px solid rgba(0, 200, 255, 0.15);
-  box-shadow: 0 0 24px rgba(0, 150, 255, 0.12);
+  border: 2px solid rgba(59, 130, 246, 0.25);
+  box-shadow: 0 0 24px rgba(59, 130, 246, 0.18);
   flex-shrink: 0;
 }
 
@@ -83,7 +86,7 @@ a:hover { color: #fff; }
   font-size: .75rem;
   font-weight: 700;
   letter-spacing: .16em;
-  color: var(--cyan);
+  color: var(--orange);
   margin-bottom: 4px;
 }
 
@@ -103,7 +106,7 @@ h1 {
 }
 
 .hero-intro { font-size: .85rem; color: var(--muted); line-height: 1.7; }
-.hero-intro u { color: var(--text-bright); text-decoration-color: var(--cyan); }
+.hero-intro u { color: var(--text-bright); text-decoration-color: var(--orange); }
 
 .hero-right { display: flex; flex-direction: column; gap: 14px; }
 
@@ -148,8 +151,8 @@ h1 {
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  background: rgba(0, 180, 255, 0.08);
-  border: 1px solid rgba(0, 200, 255, 0.15);
+  background: rgba(59, 130, 246, 0.10);
+  border: 1px solid rgba(59, 130, 246, 0.20);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -183,9 +186,9 @@ h1 {
   width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center;
   font-size: 1.1rem; flex-shrink: 0;
 }
-.project-icon.orange { background: rgba(255, 160, 0, 0.15); }
-.project-icon.green { background: rgba(0, 200, 100, 0.15); }
-.project-icon.teal { background: rgba(0, 200, 200, 0.15); }
+.project-icon.orange { background: rgba(242, 121, 43, 0.18); }
+.project-icon.green { background: rgba(74, 144, 226, 0.15); }
+.project-icon.teal { background: rgba(242, 121, 43, 0.12); }
 .project-item h3 { font-size: .82rem; color: var(--text-bright); margin-bottom: 3px; }
 .project-item p { font-size: .72rem; color: var(--muted); line-height: 1.5; }
 
@@ -221,8 +224,8 @@ h1 {
 
 .demo-badge {
   font-size: .6rem; padding: 2px 8px; border-radius: 6px;
-  background: rgba(0, 200, 255, 0.08); border: 1px solid rgba(0, 200, 255, 0.15);
-  color: var(--cyan); letter-spacing: .04em; white-space: nowrap;
+  background: rgba(59, 130, 246, 0.10); border: 1px solid rgba(242, 121, 43, 0.30);
+  color: var(--orange); letter-spacing: .04em; white-space: nowrap;
 }
 
 /* ========== ROW 5: TIMELINE ========== */
@@ -244,7 +247,7 @@ h1 {
   width: 14px; height: 14px; border-radius: 50%;
   background: var(--blue); border: 2px solid var(--cyan); margin-bottom: 8px;
 }
-.timeline-dot.active { background: var(--cyan); box-shadow: 0 0 10px var(--cyan); }
+.timeline-dot.active { background: var(--orange); box-shadow: 0 0 10px var(--orange); }
 .timeline-role { font-size: .72rem; color: var(--text-bright); line-height: 1.3; }
 .timeline-desc { font-size: .65rem; color: var(--muted); margin-top: 3px; line-height: 1.3; }
 
@@ -277,10 +280,10 @@ h1 {
   transition: transform .15s, box-shadow .2s;
 }
 .button.primary {
-  background: linear-gradient(135deg, #0066ff, #00ccff);
+  background: linear-gradient(135deg, #3b82f6, #f2792b);
   color: #fff; border: none;
 }
-.button:hover { transform: translateY(-2px); box-shadow: 0 0 20px rgba(0, 180, 255, 0.3); color: #fff; }
+.button:hover { transform: translateY(-2px); box-shadow: 0 0 20px rgba(242, 121, 43, 0.35); color: #fff; }
 
 /* ========== RESPONSIVE ========== */
 @media (max-width: 1100px) {
