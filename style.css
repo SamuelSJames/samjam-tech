@@ -28,30 +28,6 @@ body {
 a { color: var(--cyan-dim); text-decoration: none; transition: color .2s; }
 a:hover { color: #fff; }
 
-/* Visually hide content still needed for screen readers / SEO whose
-   on-screen job is now done by baked-in text in .hero-banner. */
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
-
-/* ========== HERO BANNER (full-width strip, name/title baked into image) ========== */
-.hero-banner {
-  width: 100%;
-  min-height: 340px;
-  background-image: url('assets/github-hero-2026-10-04-gemini.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 .arrow { font-size: .75rem; opacity: .5; margin-left: 4px; }
 
 .page {
@@ -319,7 +295,6 @@ h1 {
 }
 
 @media (max-width: 768px) {
-  .hero-banner { min-height: 220px; background-position: left center; }
   .page { padding: 14px 10px 32px; gap: 14px; }
   .hero-left { flex-direction: column; align-items: center; text-align: center; }
   .hero-photo { width: 130px; height: 150px; }
@@ -336,7 +311,6 @@ h1 {
 }
 
 @media (max-width: 480px) {
-  .hero-banner { min-height: 170px; background-position: left center; }
   .expertise-grid { grid-template-columns: repeat(2, 1fr); }
   .net-grid { grid-template-columns: 1fr; }
 }
